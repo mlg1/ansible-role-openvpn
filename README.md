@@ -52,6 +52,7 @@ These options change how the role works. This is a catch-all group, specific gro
 | openvpn_sync_certs           | boolean | true, false | false             | Revoke certificates not explicitly defined in 'clients'                       |
 | openvpn_uninstall            | boolean | true, false | false             | Set to true to uninstall the OpenVPN service                                  |
 | openvpn_use_ldap             | boolean | true, false | false             | Active LDAP backend for authentication. Client certificate not needed anymore |
+| openvpn_use_pam              | boolean | true, false | false             | Use PAM backend for authentication.                                           |
 ### Config fetching
 Change these options if you need to adjust how the configs are download to your local system
 | Variable                            | Type    | Choices     | Default      | Comment                                                                                                                                   |

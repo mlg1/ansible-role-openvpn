@@ -22,7 +22,7 @@ persist-key
 persist-tun
 verb 3
 
-{% if openvpn_use_ldap %}
+{% if openvpn_use_ldap or openvpn_use_pam %}
 auth-user-pass
 {% endif %}
 

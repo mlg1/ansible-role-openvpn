@@ -106,6 +106,10 @@ management-client-user {{ openvpn_management_client_user }}
 {% endif %}
 {% endif %}
 
+{% if openvpn_use_pam|bool %}
+plugin /usr/lib64/openvpn/plugins/openvpn-plugin-auth-pam.so system-auth
+{% endif %}
+
 {% if openvpn_use_ldap|bool %}
 ### LDAP AUTH ###
 {% if ansible_os_family == 'Debian' %}
